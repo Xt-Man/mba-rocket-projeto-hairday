@@ -53,6 +53,7 @@ form.onsubmit = async (event) => {
     //Recarrega os agendamentos
     await schedulesDay()
 
+    // Limpa o input de nome do cliente
     clientName.value = ""
 
   } catch (error) {

@@ -5,7 +5,7 @@ const periodMorning = document.getElementById("period-morning")
 const periodAfternoon = document.getElementById("period-afternoon")
 const periodNight = document.getElementById("period-night")
 
-export function scheduleShow({ dailySchedules }) {
+export function schedulesShow({ dailySchedules }) {
   try {
     // Limpa as listas.
     periodMorning.innerHTML = ""
@@ -25,7 +25,7 @@ export function scheduleShow({ dailySchedules }) {
 
       // Cria icone de cancelar o agendamento.
       const cancelIcon = document.createElement('img')
-      cancelIcon.classList.add("cacel-icon")
+      cancelIcon.classList.add("cancel-icon")
       cancelIcon.setAttribute("src", "./src/assets/cancel.svg")
       cancelIcon.setAttribute("alt", "Cancelar")
 

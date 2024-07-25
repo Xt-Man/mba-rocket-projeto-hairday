@@ -8,7 +8,7 @@ export function hoursLoad({ date, dailySchedules }) {
   // Limpa a lista de horários.
   hours.innerHTML = ""
 
-  // Obteém a lista de horários ocupados
+  // Obtém a lista de horários ocupados
   const unavaliableHours = dailySchedules.map((schedule) => 
     dayjs(schedule.when).format("HH:mm")
   )
